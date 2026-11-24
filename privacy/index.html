@@ -67,14 +67,14 @@
   <ul>
     <li><strong>Screenshots and images</strong> you capture, import from your photo library or open through the "Open in Shotsmith" Shortcuts action (iOS), plus your edits, annotations, backgrounds and stitched long screenshots.</li>
     <li><strong>Text recognition (OCR) and QR/barcode reading.</strong> This runs entirely on-device, using Apple Vision on iOS and Google ML Kit's on-device text and barcode recognition on Android. Recognized text stays on your device.</li>
-    <li><strong>Screen recordings</strong> and, if you turn it on, microphone audio recorded with them.</li>
+    <li><strong>Screen recordings</strong> (Android only) and, if you turn it on, microphone audio recorded with them.</li>
     <li><strong>Capture history and settings</strong>, such as pins, filters and auto-cleanup preferences, stored in the app's private storage.</li>
   </ul>
   <p>Images leave the app only when you choose to save them to your photo library, copy them to the clipboard or share them through the system share sheet. In that case, they go to the destination you pick.</p>
 
   <h2>3. Third-party services</h2>
   <h3>Google AdMob (advertising)</h3>
-  <p>The free version of the app shows a short rewarded video ad before each save or export. Ads are provided by Google AdMob (Google LLC / Google Ireland Limited). The Google Mobile Ads SDK may collect and process:</p>
+  <p>The free version of the app occasionally shows an ad after a save. Saving is never blocked by an ad. Ads are provided by Google AdMob (Google LLC / Google Ireland Limited). The Google Mobile Ads SDK may collect and process:</p>
   <ul>
     <li>Device identifiers: on iOS, the advertising identifier (IDFA) <em>only if you allow tracking</em> in Apple's App Tracking Transparency prompt, otherwise app- or vendor-scoped identifiers; on Android, the advertising ID and app set ID.</li>
     <li>Your IP address, which may be used to estimate your general (coarse) location.</li>
@@ -95,14 +95,14 @@
     <thead><tr><th>Permission</th><th>Why the app asks</th></tr></thead>
     <tbody>
       <tr><td>Photos / photo library (iOS: read and add; Android: READ_MEDIA_IMAGES or selected photos)</td><td>To find your latest screenshots, import images you pick, and save edited images back to your library. Photos are read on-device only.</td></tr>
-      <tr><td>Microphone (iOS and Android RECORD_AUDIO)</td><td>Only to record audio with a screen recording, if you turn on the microphone for that recording.</td></tr>
+      <tr><td>Microphone (Android RECORD_AUDIO)</td><td>Only to record audio with a screen recording, if you turn on the microphone for that recording.</td></tr>
       <tr><td>Tracking (iOS App Tracking Transparency)</td><td>To ask whether Google AdMob may use your advertising identifier for personalized ads. Saying no does not limit any feature.</td></tr>
       <tr><td>Notifications (Android POST_NOTIFICATIONS)</td><td>To show the ongoing notification, with its Stop button, while a screen recording is running.</td></tr>
       <tr><td>Foreground service, screen capture and microphone (Android)</td><td>Android requires a visible foreground service to record the screen (MediaProjection) and, optionally, the microphone. Recording starts only after you confirm Android's screen-capture prompt.</td></tr>
       <tr><td>Advertising ID (Android AD_ID)</td><td>Lets Google AdMob read the Android advertising ID for ads, subject to your device settings.</td></tr>
     </tbody>
   </table>
-  <p>On iOS, screen recording uses Apple's ReplayKit broadcast extension, which you start yourself from the system broadcast picker.</p>
+  <p>Screen recording is available only in the Android app. The iOS app does not record the screen and never asks for microphone access.</p>
 
   <h2>5. Your choices</h2>
   <ul>
@@ -153,14 +153,14 @@
   <ul>
     <li><strong>Ekran görüntüleri ve görseller:</strong> yakaladığın, fotoğraf arşivinden içe aktardığın veya "Shotsmith'te Aç" Kestirmeler eylemiyle (iOS) açtığın görseller; ayrıca düzenlemelerin, işaretlerin, arka planların ve birleştirilmiş uzun ekran görüntülerin.</li>
     <li><strong>Metin tanıma (OCR) ve QR/barkod okuma:</strong> tamamen cihaz üzerinde çalışır (iOS'ta Apple Vision, Android'de Google ML Kit'in cihaz üzerindeki metin ve barkod tanıma özelliği). Tanınan metin cihazında kalır.</li>
-    <li><strong>Ekran kayıtları</strong> ve, açarsan, kayda eklenen mikrofon sesi.</li>
+    <li><strong>Ekran kayıtları</strong> (yalnızca Android) ve, açarsan, kayda eklenen mikrofon sesi.</li>
     <li><strong>Yakalama geçmişi ve ayarlar:</strong> sabitlemeler, filtreler ve otomatik temizleme tercihleri gibi bilgiler, uygulamanın özel depolama alanında tutulur.</li>
   </ul>
   <p>Görseller uygulamadan yalnızca sen fotoğraf arşivine kaydettiğinde, panoya kopyaladığında veya sistem paylaşım menüsüyle paylaştığında çıkar. Bu durumda senin seçtiğin yere gider.</p>
 
   <h2>3. Üçüncü taraf hizmetler</h2>
   <h3>Google AdMob (reklam)</h3>
-  <p>Uygulamanın ücretsiz sürümü, her kaydetme veya dışa aktarma öncesinde kısa bir ödüllü video reklam gösterir. Reklamlar Google AdMob (Google LLC / Google Ireland Limited) tarafından sunulur. Google Mobile Ads SDK aşağıdaki verileri toplayabilir ve işleyebilir:</p>
+  <p>Uygulamanın ücretsiz sürümü, kaydettikten sonra ara sıra reklam gösterir. Kaydetme hiçbir zaman bir reklamla engellenmez. Reklamlar Google AdMob (Google LLC / Google Ireland Limited) tarafından sunulur. Google Mobile Ads SDK aşağıdaki verileri toplayabilir ve işleyebilir:</p>
   <ul>
     <li>Cihaz tanımlayıcıları: iOS'ta reklam tanımlayıcısı (IDFA), <em>yalnızca</em> Apple'ın Uygulama İzleme Şeffaflığı (ATT) isteminde izlemeye izin verirsen; aksi halde uygulamaya veya geliştiriciye özgü tanımlayıcılar. Android'de reklam kimliği ve app set ID.</li>
     <li>IP adresin. Bu adres genel (yaklaşık) konumunu tahmin etmek için kullanılabilir.</li>
@@ -181,14 +181,14 @@
     <thead><tr><th>İzin</th><th>Neden isteniyor</th></tr></thead>
     <tbody>
       <tr><td>Fotoğraflar / fotoğraf arşivi (iOS: okuma ve ekleme; Android: READ_MEDIA_IMAGES veya seçili fotoğraflar)</td><td>Son ekran görüntülerini bulmak, seçtiğin görselleri içe aktarmak ve düzenlenmiş görselleri arşivine kaydetmek için. Fotoğraflar yalnızca cihazda okunur.</td></tr>
-      <tr><td>Mikrofon (iOS ve Android RECORD_AUDIO)</td><td>Yalnızca o kayıt için mikrofonu açarsan, ekran kaydına ses eklemek için.</td></tr>
+      <tr><td>Mikrofon (Android RECORD_AUDIO)</td><td>Yalnızca o kayıt için mikrofonu açarsan, ekran kaydına ses eklemek için.</td></tr>
       <tr><td>İzleme (iOS Uygulama İzleme Şeffaflığı)</td><td>Google AdMob'un kişiselleştirilmiş reklamlar için reklam tanımlayıcını kullanıp kullanamayacağını sormak için. Reddetmen hiçbir özelliği kısıtlamaz.</td></tr>
       <tr><td>Bildirimler (Android POST_NOTIFICATIONS)</td><td>Ekran kaydı sürerken, Durdur düğmeli kalıcı bildirimi göstermek için.</td></tr>
       <tr><td>Ön plan hizmeti, ekran yakalama ve mikrofon (Android)</td><td>Android, ekranı (MediaProjection) ve isteğe bağlı olarak mikrofonu kaydetmek için görünür bir ön plan hizmeti zorunlu tutar. Kayıt yalnızca Android'in ekran yakalama onayını verdiğinde başlar.</td></tr>
       <tr><td>Reklam kimliği (Android AD_ID)</td><td>Google AdMob'un, cihaz ayarlarına bağlı olarak, Android reklam kimliğini reklamlar için okuyabilmesi için.</td></tr>
     </tbody>
   </table>
-  <p>iOS'ta ekran kaydı, Apple'ın ReplayKit yayın uzantısıyla yapılır. Kaydı sistemin yayın seçicisinden sen başlatırsın.</p>
+  <p>Ekran kaydı yalnızca Android uygulamasında vardır. iOS uygulaması ekranı kaydetmez ve mikrofon izni istemez.</p>
 
   <h2>5. Seçimlerin</h2>
   <ul>

@@ -7,11 +7,11 @@
 <meta name="description" content="Privacy policy for Shotsmith: Screenshot Editor (iOS and Android).">
 <style>
   :root {
-    --bg: #ffffff; --fg: #17151f; --muted: #5d5a6b; --line: #e6e3ef;
-    --accent: #6a46f5; --card: #f6f4fc;
+    --bg: #ffffff; --fg: #111113; --muted: #5c5c63; --line: #e5e5ea;
+    --accent: #2e5cff; --card: #f2f2f7;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #0B0B12; --fg: #ecebf3; --muted: #a3a0b5; --line: #262433; --accent: #a08bff; --card: #15141f; }
+    :root { --bg: #000000; --fg: #ffffff; --muted: #a1a1a8; --line: #2c2c2e; --accent: #7a9bff; --card: #1c1c1e; }
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
@@ -49,18 +49,18 @@
 <main>
 <header>
   <h1>Shotsmith Privacy Policy</h1>
-  <p class="meta">Shotsmith: Screenshot Editor, for iOS and Android. Effective date: 24 November 2026.</p>
+  <p class="meta">Shotsmith: Screenshot Editor, for iOS and Android. Effective date: 25 November 2026.</p>
   <nav><a href="#en">English</a><a href="#tr">Türkçe</a></nav>
 </header>
 
 <!-- ============================== ENGLISH ============================== -->
 <section id="en" lang="en">
   <div class="summary">
-    <p><strong>In short:</strong> Shotsmith edits your screenshots on your device. We have no accounts, no servers of our own and no analytics. Your images and any text recognized in them never leave your device. The app shows ads from Google AdMob and uses RevenueCat to check the optional one-time "Remove Ads" purchase. Those two services receive limited device and usage data, described below.</p>
+    <p><strong>In short:</strong> Shotsmith edits your screenshots on your device. We have no accounts, no servers of our own and no analytics. Your images, scanned or signed documents, signatures and any text recognized in them never leave your device unless you share or save them yourself. The app shows ads from Google AdMob and uses RevenueCat to check the optional one-time "Remove Ads" purchase. Those two services receive limited device and usage data, described below.</p>
   </div>
 
   <h2>1. Who we are</h2>
-  <p>Shotsmith ("the app") is published by the Shotsmith developer ("we", "us"). We are the data controller for the limited processing described here. Contact: <a href="mailto:magodeouz@gmail.com">magodeouz@gmail.com</a>.</p>
+  <p>Shotsmith ("the app") is published by an individual developer based in Türkiye ("we", "us"), whose name is shown as the seller on the App Store and Google Play product pages. We are the data controller for the limited processing described here. Contact: <a href="mailto:magodeouz@gmail.com">magodeouz@gmail.com</a>.</p>
 
   <h2>2. Data processed only on your device</h2>
   <p>The following data is processed only on your phone. We never receive it, and it is not sent to any third party:</p>
@@ -68,9 +68,12 @@
     <li><strong>Screenshots and images</strong> you capture, import from your photo library or open through the "Open in Shotsmith" Shortcuts action (iOS), plus your edits, annotations, backgrounds and stitched long screenshots.</li>
     <li><strong>Text recognition (OCR) and QR/barcode reading.</strong> This runs entirely on-device, using Apple Vision on iOS and Google ML Kit's on-device text and barcode recognition on Android. Recognized text stays on your device.</li>
     <li><strong>Screen recordings</strong> (Android only) and, if you turn it on, microphone audio recorded with them.</li>
-    <li><strong>Capture history and settings</strong>, such as pins, filters and auto-cleanup preferences, stored in the app's private storage.</li>
+    <li><strong>Documents and PDFs</strong> (iOS): pages you scan with the camera (Apple VisionKit document scanner) and PDFs you open from the Files app. The app turns scans into a PDF and adds your signature to pages on the device. Scanned and signed PDFs are not kept in the app: they are handed to Files or the share sheet, and the app's working copy is deleted when you leave the screen (leftovers from an interrupted session are deleted automatically within about a day).</li>
+    <li><strong>Signatures and logos</strong> you draw, photograph or pick so you can reuse them. Removing the paper or background from a signature or logo photo is done on the device. They are stored in the app's private storage until you delete them or uninstall the app. A signature is added to a PDF as an image; it is not a certified or qualified electronic signature.</li>
+    <li><strong>Images shared to the app</strong> with "Share &gt; Shotsmith" (iOS share extension). The extension copies them into a storage area on your device that only Shotsmith and its extension can access (an App Group container). The app moves them into its own storage the next time you open it.</li>
+    <li><strong>Capture history and settings</strong>, such as pins, folders, filters and auto-cleanup preferences, stored in the app's private storage.</li>
   </ul>
-  <p>Images leave the app only when you choose to save them to your photo library, copy them to the clipboard or share them through the system share sheet. In that case, they go to the destination you pick.</p>
+  <p>Images and documents leave the app only when you choose to save them to your photo library or Files, copy them to the clipboard or share them through the system share sheet. In that case, they go to the destination you pick.</p>
 
   <h2>3. Third-party services</h2>
   <h3>Google AdMob (advertising)</h3>
@@ -81,20 +84,21 @@
     <li>Device information, such as model, operating system, language and network type.</li>
     <li>Ad interactions, such as ads viewed, taps and video views, and diagnostic and performance information.</li>
   </ul>
-  <p>Google uses this data to show ads, measure them, limit how often an ad is shown, and prevent fraud. If you consent, it also uses the data to personalize ads. In the EEA, the UK and Switzerland, we ask for your consent through Google's User Messaging Platform before any personalized ads are shown. Learn more: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use its services</a>.</p>
+  <p>Google uses this data to show ads, measure them, limit how often an ad is shown, and prevent fraud. If you consent, it also uses the data to personalize ads. In the EEA, the UK and Switzerland, we ask for your consent through Google's User Messaging Platform (UMP) before ads are personalized. In US states whose privacy laws give you the right to opt out of targeted advertising, the app offers that opt-out through the same "Privacy choices" entry in Settings. Ads are limited to content suitable for teens (Google's "T" maximum ad content rating). Learn more: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use its services</a>.</p>
   <p>If you buy "Remove Ads", no further ads are requested or shown.</p>
 
   <h3>RevenueCat (in-app purchase)</h3>
   <p>The optional one-time "Remove Ads" purchase is processed by Apple (App Store) or Google (Google Play). We never see your payment details. To validate the purchase and restore it on your other devices, we use RevenueCat, Inc. RevenueCat receives an anonymous, randomly generated app user ID, your purchase history (product, date, price, store transaction/receipt data), and basic device and app information such as platform, OS version, app version and country/store. This ID is not linked to your name or email. See the <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat Privacy Policy</a>.</p>
 
   <h3>What we do not use</h3>
-  <p>We do not use analytics, crash-reporting or other tracking SDKs. We do not sell your personal data. Apart from the ad and purchase processing described above, we do not share data with anyone.</p>
+  <p>We do not use analytics, crash-reporting or other tracking SDKs of our own. We do not sell your personal data for money. Some US state laws treat letting an ad network use device data for personalized ("cross-context behavioral") advertising as "selling" or "sharing"; you can opt out as described in section 5. Apart from the ad and purchase processing described above, we do not share data with anyone.</p>
 
   <h2>4. Permissions</h2>
   <table>
     <thead><tr><th>Permission</th><th>Why the app asks</th></tr></thead>
     <tbody>
       <tr><td>Photos / photo library (iOS: read and add; Android: READ_MEDIA_IMAGES or selected photos)</td><td>To find your latest screenshots, import images you pick, and save edited images back to your library. Photos are read on-device only.</td></tr>
+      <tr><td>Camera (iOS)</td><td>Only when you scan a document or take a photo of your signature. Camera images are processed on the device and are not uploaded.</td></tr>
       <tr><td>Microphone (Android RECORD_AUDIO)</td><td>Only to record audio with a screen recording, if you turn on the microphone for that recording.</td></tr>
       <tr><td>Tracking (iOS App Tracking Transparency)</td><td>To ask whether Google AdMob may use your advertising identifier for personalized ads. Saying no does not limit any feature.</td></tr>
       <tr><td>Notifications (Android POST_NOTIFICATIONS)</td><td>To show the ongoing notification, with its Stop button, while a screen recording is running.</td></tr>
@@ -107,7 +111,7 @@
   <h2>5. Your choices</h2>
   <ul>
     <li><strong>App Tracking Transparency (iOS):</strong> you can allow or deny tracking when the app asks, and change it later in Settings &gt; Privacy &amp; Security &gt; Tracking.</li>
-    <li><strong>Consent form (EEA/UK/Switzerland):</strong> you can review or change your ad consent at any time from the privacy options entry in the app's Settings screen.</li>
+    <li><strong>Consent form and US opt-out:</strong> in the EEA, the UK, Switzerland and US states where it is required, you can review or change your ad choices at any time from "Privacy choices" in the app's Settings screen.</li>
     <li><strong>Android advertising ID:</strong> you can reset or delete it in Settings &gt; Privacy &gt; Ads (or Settings &gt; Google &gt; Ads, depending on your device).</li>
     <li><strong>Remove ads:</strong> the one-time "Remove Ads" purchase stops all ad requests.</li>
     <li><strong>Permissions:</strong> you can revoke any permission in your device settings. Related features will stop working, and the rest of the app keeps working.</li>
@@ -115,13 +119,13 @@
 
   <h2>6. Retention and deletion</h2>
   <ul>
-    <li>Images, recordings, history and settings stay on your device until you delete them, until auto-cleanup removes them (if enabled), or until you uninstall the app. Files you saved to your photo library stay there until you delete them.</li>
+    <li>Images, recordings, saved signatures and logos, history and settings stay on your device until you delete them, until auto-cleanup removes them (if enabled), or until you uninstall the app. Files you saved to your photo library or Files stay there until you delete them. Working copies of scanned and signed PDFs are deleted when you leave the PDF screen, or automatically within about a day.</li>
     <li>Google keeps advertising data according to its own policies. See the Google links above.</li>
     <li>RevenueCat keeps purchase records for as long as needed to validate and restore your purchase, and to meet legal and accounting obligations. You can ask us to delete this data by emailing <a href="mailto:magodeouz@gmail.com">magodeouz@gmail.com</a>. Because we do not know who you are, we may ask for your store order ID so we can find the record. Deleting it means the purchase may need to be restored again from the store.</li>
   </ul>
 
   <h2>7. Children</h2>
-  <p>Shotsmith is not directed to children under 13 (or the equivalent minimum age in your country). We do not knowingly collect personal data from children. If you believe a child has provided data through the app, contact us and we will help delete it.</p>
+  <p>Shotsmith is rated 13+ and is not directed to children under 13 (or the equivalent minimum age in your country). We do not knowingly collect personal data from children. If you believe a child has provided data through the app, contact us and we will help delete it.</p>
 
   <h2>8. Security and international transfers</h2>
   <p>Data sent to Google and RevenueCat is encrypted in transit (HTTPS/TLS). These providers may process data in the United States and other countries, under safeguards such as the EU Standard Contractual Clauses.</p>
@@ -139,14 +143,14 @@
 <!-- ============================== TÜRKÇE ============================== -->
 <section id="tr" lang="tr" class="lang">
   <h1>Shotsmith Gizlilik Politikası</h1>
-  <p class="meta">Shotsmith: Ekran Görüntüsü (iOS ve Android). Yürürlük tarihi: 24 Kasım 2026.</p>
+  <p class="meta">Shotsmith: Ekran Görüntüsü (iOS ve Android). Yürürlük tarihi: 25 Kasım 2026.</p>
 
   <div class="summary">
-    <p><strong>Özetle:</strong> Shotsmith ekran görüntülerini cihazında düzenler. Hesap sistemimiz, kendi sunucumuz ve analiz aracımız yoktur. Görsellerin ve bunlardan tanınan metinler cihazından çıkmaz. Uygulama Google AdMob reklamları gösterir ve isteğe bağlı tek seferlik "Reklamları Kaldır" satın alımını doğrulamak için RevenueCat'i kullanır. Bu iki hizmet, aşağıda açıklanan sınırlı cihaz ve kullanım verilerini alır.</p>
+    <p><strong>Özetle:</strong> Shotsmith ekran görüntülerini cihazında düzenler. Hesap sistemimiz, kendi sunucumuz ve analiz aracımız yoktur. Görsellerin, taradığın veya imzaladığın belgeler, imzaların ve görsellerden tanınan metinler, sen paylaşmadıkça veya kaydetmedikçe cihazından çıkmaz. Uygulama Google AdMob reklamları gösterir ve isteğe bağlı tek seferlik "Reklamları Kaldır" satın alımını doğrulamak için RevenueCat'i kullanır. Bu iki hizmet, aşağıda açıklanan sınırlı cihaz ve kullanım verilerini alır.</p>
   </div>
 
   <h2>1. Biz kimiz</h2>
-  <p>Shotsmith ("uygulama") Shotsmith geliştiricisi ("biz") tarafından yayımlanır. Burada açıklanan sınırlı veri işleme için veri sorumlusu biziz. İletişim: <a href="mailto:magodeouz@gmail.com">magodeouz@gmail.com</a>.</p>
+  <p>Shotsmith ("uygulama"), Türkiye'de yaşayan bireysel bir geliştirici ("biz") tarafından yayımlanır; adı App Store ve Google Play ürün sayfalarında satıcı olarak gösterilir. Burada açıklanan sınırlı veri işleme için 6698 sayılı KVKK ve GDPR anlamında veri sorumlusu biziz. İletişim: <a href="mailto:magodeouz@gmail.com">magodeouz@gmail.com</a>.</p>
 
   <h2>2. Yalnızca cihazında işlenen veriler</h2>
   <p>Aşağıdaki veriler yalnızca telefonunda işlenir. Bize ulaşmaz ve hiçbir üçüncü tarafa gönderilmez:</p>
@@ -154,9 +158,12 @@
     <li><strong>Ekran görüntüleri ve görseller:</strong> yakaladığın, fotoğraf arşivinden içe aktardığın veya "Shotsmith'te Aç" Kestirmeler eylemiyle (iOS) açtığın görseller; ayrıca düzenlemelerin, işaretlerin, arka planların ve birleştirilmiş uzun ekran görüntülerin.</li>
     <li><strong>Metin tanıma (OCR) ve QR/barkod okuma:</strong> tamamen cihaz üzerinde çalışır (iOS'ta Apple Vision, Android'de Google ML Kit'in cihaz üzerindeki metin ve barkod tanıma özelliği). Tanınan metin cihazında kalır.</li>
     <li><strong>Ekran kayıtları</strong> (yalnızca Android) ve, açarsan, kayda eklenen mikrofon sesi.</li>
-    <li><strong>Yakalama geçmişi ve ayarlar:</strong> sabitlemeler, filtreler ve otomatik temizleme tercihleri gibi bilgiler, uygulamanın özel depolama alanında tutulur.</li>
+    <li><strong>Belgeler ve PDF'ler</strong> (iOS): kamerayla taradığın sayfalar (Apple VisionKit belge tarayıcısı) ve Dosyalar uygulamasından açtığın PDF'ler. Taramalar cihazında PDF'e dönüştürülür ve imzan sayfalara cihazında eklenir. Taranan ve imzalanan PDF'ler uygulamada saklanmaz: Dosyalar'a veya paylaşım menüsüne verilir, uygulamanın çalışma kopyası ekrandan çıktığında silinir (yarıda kalan bir oturumdan kalanlar yaklaşık bir gün içinde otomatik olarak silinir).</li>
+    <li><strong>İmzalar ve logolar:</strong> yeniden kullanmak için çizdiğin, fotoğrafını çektiğin veya seçtiğin imza ve logolar. İmza veya logo fotoğrafındaki kâğıdın ya da arka planın kaldırılması cihazında yapılır. Sen silene veya uygulamayı kaldırana kadar uygulamanın özel depolama alanında tutulur. İmza PDF'e görsel olarak eklenir; onaylı veya nitelikli bir elektronik imza değildir.</li>
+    <li><strong>Uygulamaya paylaşılan görseller</strong> ("Paylaş &gt; Shotsmith", iOS paylaşım uzantısı): uzantı bu görselleri cihazında yalnızca Shotsmith'in ve uzantısının erişebildiği bir alana (App Group kapsayıcısı) kopyalar. Uygulama, bir sonraki açılışta bunları kendi depolama alanına taşır.</li>
+    <li><strong>Yakalama geçmişi ve ayarlar:</strong> sabitlemeler, klasörler, filtreler ve otomatik temizleme tercihleri gibi bilgiler, uygulamanın özel depolama alanında tutulur.</li>
   </ul>
-  <p>Görseller uygulamadan yalnızca sen fotoğraf arşivine kaydettiğinde, panoya kopyaladığında veya sistem paylaşım menüsüyle paylaştığında çıkar. Bu durumda senin seçtiğin yere gider.</p>
+  <p>Görseller ve belgeler uygulamadan yalnızca sen fotoğraf arşivine veya Dosyalar'a kaydettiğinde, panoya kopyaladığında ya da sistem paylaşım menüsüyle paylaştığında çıkar. Bu durumda senin seçtiğin yere gider.</p>
 
   <h2>3. Üçüncü taraf hizmetler</h2>
   <h3>Google AdMob (reklam)</h3>
@@ -167,20 +174,21 @@
     <li>Cihaz bilgileri: model, işletim sistemi, dil ve ağ türü gibi.</li>
     <li>Reklam etkileşimleri: görüntülenen reklamlar, dokunmalar ve video izlemeleri gibi; ayrıca tanılama ve performans bilgileri.</li>
   </ul>
-  <p>Google bu verileri reklam göstermek, reklamları ölçmek, bir reklamın kaç kez gösterileceğini sınırlamak ve sahteciliği önlemek için kullanır. İzin verirsen reklamları kişiselleştirmek için de kullanır. AEA, Birleşik Krallık ve İsviçre'de, kişiselleştirilmiş reklam gösterilmeden önce Google'ın Kullanıcı Mesajlaşma Platformu (UMP) aracılığıyla onayın istenir. Ayrıntılar: <a href="https://policies.google.com/privacy?hl=tr" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://policies.google.com/technologies/partner-sites?hl=tr" rel="noopener">Google, hizmetlerini kullanan site veya uygulamalardan gelen bilgileri nasıl kullanır</a>.</p>
+  <p>Google bu verileri reklam göstermek, reklamları ölçmek, bir reklamın kaç kez gösterileceğini sınırlamak ve sahteciliği önlemek için kullanır. İzin verirsen reklamları kişiselleştirmek için de kullanır. AEA, Birleşik Krallık ve İsviçre'de, reklamlar kişiselleştirilmeden önce Google'ın Kullanıcı Mesajlaşma Platformu (UMP) aracılığıyla onayın istenir. Gizlilik yasaları hedefli reklamı reddetme hakkı tanıyan ABD eyaletlerinde, uygulama bu seçeneği Ayarlar'daki aynı "Gizlilik seçenekleri" bölümünden sunar. Reklamlar gençlere uygun içerikle sınırlıdır (Google'ın en yüksek reklam içerik derecesi "T"). Ayrıntılar: <a href="https://policies.google.com/privacy?hl=tr" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://policies.google.com/technologies/partner-sites?hl=tr" rel="noopener">Google, hizmetlerini kullanan site veya uygulamalardan gelen bilgileri nasıl kullanır</a>.</p>
   <p>"Reklamları Kaldır" satın alımını yaptığında artık reklam istenmez ve gösterilmez.</p>
 
   <h3>RevenueCat (uygulama içi satın alma)</h3>
   <p>İsteğe bağlı tek seferlik "Reklamları Kaldır" satın alımının ödemesi Apple (App Store) veya Google (Google Play) tarafından alınır. Ödeme bilgilerini hiçbir zaman görmeyiz. Satın alımı doğrulamak ve diğer cihazlarında geri yüklemek için RevenueCat, Inc. hizmetini kullanırız. RevenueCat şu bilgileri alır: anonim, rastgele oluşturulmuş bir uygulama kullanıcı kimliği; satın alma geçmişin (ürün, tarih, fiyat, mağaza işlem/makbuz verileri); platform, işletim sistemi sürümü, uygulama sürümü ve ülke/mağaza gibi temel cihaz ve uygulama bilgileri. Bu kimlik adınla veya e-posta adresinle ilişkilendirilmez. Bkz. <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat Gizlilik Politikası</a>.</p>
 
   <h3>Kullanmadıklarımız</h3>
-  <p>Analiz, hata raporlama veya başka izleme SDK'ları kullanmayız. Kişisel verilerini satmayız. Yukarıda açıklanan reklam ve satın alma işlemleri dışında hiç kimseyle veri paylaşmayız.</p>
+  <p>Kendimize ait analiz, hata raporlama veya başka izleme SDK'ları kullanmayız. Kişisel verilerini para karşılığında satmayız. Bazı ABD eyalet yasaları, bir reklam ağının cihaz verilerini kişiselleştirilmiş reklam için kullanmasına izin vermeyi "satış" veya "paylaşım" sayar; bunu 5. bölümde anlatıldığı gibi reddedebilirsin. Yukarıda açıklanan reklam ve satın alma işlemleri dışında hiç kimseyle veri paylaşmayız.</p>
 
   <h2>4. İzinler</h2>
   <table>
     <thead><tr><th>İzin</th><th>Neden isteniyor</th></tr></thead>
     <tbody>
       <tr><td>Fotoğraflar / fotoğraf arşivi (iOS: okuma ve ekleme; Android: READ_MEDIA_IMAGES veya seçili fotoğraflar)</td><td>Son ekran görüntülerini bulmak, seçtiğin görselleri içe aktarmak ve düzenlenmiş görselleri arşivine kaydetmek için. Fotoğraflar yalnızca cihazda okunur.</td></tr>
+      <tr><td>Kamera (iOS)</td><td>Yalnızca belge taradığında veya imzanın fotoğrafını çektiğinde. Kamera görüntüleri cihazında işlenir ve yüklenmez.</td></tr>
       <tr><td>Mikrofon (Android RECORD_AUDIO)</td><td>Yalnızca o kayıt için mikrofonu açarsan, ekran kaydına ses eklemek için.</td></tr>
       <tr><td>İzleme (iOS Uygulama İzleme Şeffaflığı)</td><td>Google AdMob'un kişiselleştirilmiş reklamlar için reklam tanımlayıcını kullanıp kullanamayacağını sormak için. Reddetmen hiçbir özelliği kısıtlamaz.</td></tr>
       <tr><td>Bildirimler (Android POST_NOTIFICATIONS)</td><td>Ekran kaydı sürerken, Durdur düğmeli kalıcı bildirimi göstermek için.</td></tr>
@@ -193,7 +201,7 @@
   <h2>5. Seçimlerin</h2>
   <ul>
     <li><strong>Uygulama İzleme Şeffaflığı (iOS):</strong> uygulama sorduğunda izlemeye izin verebilir veya reddedebilirsin. Daha sonra Ayarlar &gt; Gizlilik ve Güvenlik &gt; İzleme bölümünden değiştirebilirsin.</li>
-    <li><strong>Onay formu (AEA/Birleşik Krallık/İsviçre):</strong> reklam onayını, uygulamanın Ayarlar ekranındaki gizlilik seçenekleri bölümünden istediğin zaman görüntüleyebilir veya değiştirebilirsin.</li>
+    <li><strong>Onay formu ve ABD'de reddetme hakkı:</strong> AEA, Birleşik Krallık, İsviçre ve bunun gerektiği ABD eyaletlerinde reklam tercihlerini, uygulamanın Ayarlar ekranındaki "Gizlilik seçenekleri" bölümünden istediğin zaman görüntüleyebilir veya değiştirebilirsin.</li>
     <li><strong>Android reklam kimliği:</strong> Ayarlar &gt; Gizlilik &gt; Reklamlar (cihazına göre Ayarlar &gt; Google &gt; Reklamlar) bölümünden sıfırlayabilir veya silebilirsin.</li>
     <li><strong>Reklamları kaldır:</strong> tek seferlik "Reklamları Kaldır" satın alımı tüm reklam isteklerini durdurur.</li>
     <li><strong>İzinler:</strong> herhangi bir izni cihaz ayarlarından geri alabilirsin. İlgili özellikler çalışmaz, uygulamanın geri kalanı çalışmaya devam eder.</li>
@@ -201,19 +209,20 @@
 
   <h2>6. Saklama ve silme</h2>
   <ul>
-    <li>Görseller, kayıtlar, geçmiş ve ayarlar; sen silene, otomatik temizleme (açıksa) kaldırana veya uygulamayı kaldırana kadar cihazında kalır. Fotoğraf arşivine kaydettiğin dosyalar, sen silene kadar orada kalır.</li>
+    <li>Görseller, kayıtlar, kaydedilen imza ve logolar, geçmiş ve ayarlar; sen silene, otomatik temizleme (açıksa) kaldırana veya uygulamayı kaldırana kadar cihazında kalır. Fotoğraf arşivine veya Dosyalar'a kaydettiğin dosyalar, sen silene kadar orada kalır. Taranan ve imzalanan PDF'lerin çalışma kopyaları PDF ekranından çıktığında ya da en geç yaklaşık bir gün içinde otomatik olarak silinir.</li>
     <li>Google reklam verilerini kendi politikalarına göre saklar (yukarıdaki bağlantılara bakabilirsin).</li>
     <li>RevenueCat satın alma kayıtlarını, satın alımını doğrulamak ve geri yüklemek ile yasal ve muhasebe yükümlülüklerini yerine getirmek için gerektiği sürece saklar. Bu verilerin silinmesini <a href="mailto:magodeouz@gmail.com">magodeouz@gmail.com</a> adresine yazarak isteyebilirsin. Kim olduğunu bilmediğimiz için kaydı bulabilmek adına mağaza sipariş numaranı isteyebiliriz. Kayıt silinirse satın alımı mağazadan yeniden geri yüklemen gerekebilir.</li>
   </ul>
 
   <h2>7. Çocuklar</h2>
-  <p>Shotsmith 13 yaşın (veya ülkendeki eşdeğer asgari yaşın) altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel veri toplamayız. Bir çocuğun uygulama üzerinden veri sağladığını düşünüyorsan bizimle iletişime geç, silinmesine yardımcı olalım.</p>
+  <p>Shotsmith 13+ olarak derecelendirilmiştir ve 13 yaşın (veya ülkendeki eşdeğer asgari yaşın) altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel veri toplamayız. Bir çocuğun uygulama üzerinden veri sağladığını düşünüyorsan bizimle iletişime geç, silinmesine yardımcı olalım.</p>
 
   <h2>8. Güvenlik ve yurt dışına aktarım</h2>
-  <p>Google ve RevenueCat'e gönderilen veriler aktarım sırasında şifrelenir (HTTPS/TLS). Bu sağlayıcılar verileri ABD ve diğer ülkelerde, AB Standart Sözleşme Maddeleri gibi güvencelerle işleyebilir.</p>
+  <p>Google ve RevenueCat'e gönderilen veriler aktarım sırasında şifrelenir (HTTPS/TLS). Bu sağlayıcılar verileri ABD ve diğer ülkelerde, AB Standart Sözleşme Maddeleri gibi güvencelerle işleyebilir. Reklam ve satın alma verilerinin yurt dışına aktarılması KVKK'nın 9. maddesi kapsamında gerçekleşir; kişiselleştirilmiş reklam için verdiğin izin (ATT/onay formu) istediğin zaman geri alınabilir.</p>
 
   <h2>9. Hakların</h2>
-  <p>Yaşadığın yere bağlı olarak (örneğin 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK), GDPR veya Kaliforniya mevzuatı kapsamında) kişisel verilerine erişme, düzeltilmesini, silinmesini veya aktarılmasını isteme, işlemeye itiraz etme veya kısıtlanmasını isteme ve onayını geri çekme hakların olabilir. Bu hakları kullanmak için <a href="mailto:magodeouz@gmail.com">magodeouz@gmail.com</a> adresine yazabilirsin. Ayrıca yetkili veri koruma kurumuna (Türkiye'de Kişisel Verileri Koruma Kurumu) şikâyette bulunabilirsin. Reklam verilerini, mevzuatın gerektirdiği durumlarda açık rızana, diğer durumlarda ücretsiz uygulamayı finanse etmeye yönelik meşru menfaatimize dayanarak işleriz. Satın alma verilerini, satın aldığın ürünü sağlayabilmek için işleriz.</p>
+  <p>Yaşadığın yere bağlı olarak (örneğin 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK), GDPR veya Kaliforniya mevzuatı kapsamında) kişisel verilerine erişme, düzeltilmesini, silinmesini veya aktarılmasını isteme, işlemeye itiraz etme veya kısıtlanmasını isteme ve onayını geri çekme hakların olabilir. Bu hakları kullanmak için <a href="mailto:magodeouz@gmail.com">magodeouz@gmail.com</a> adresine yazabilirsin. Ayrıca yetkili veri koruma kurumuna (Türkiye'de Kişisel Verileri Koruma Kurumu) şikâyette bulunabilirsin. Türkiye'de bu haklar KVKK'nın 11. maddesinde düzenlenmiştir.</p>
+  <p>Reklam ve satın alma verileri, uygulamadaki Google ve RevenueCat SDK'ları aracılığıyla otomatik yollarla toplanır. Reklam verilerini, mevzuatın gerektirdiği durumlarda açık rızana (KVKK m. 5/1), diğer durumlarda ücretsiz uygulamayı finanse etmeye yönelik meşru menfaatimize (KVKK m. 5/2-f) dayanarak işleriz. Satın alma verilerini, satın aldığın ürünü sağlayabilmek için, yani bir sözleşmenin kurulması ve ifası için (KVKK m. 5/2-c) işleriz.</p>
 
   <h2>10. Değişiklikler</h2>
   <p>Bu politikayı değiştirirsek bu sayfayı ve yukarıdaki yürürlük tarihini güncelleriz. Önemli değişiklikleri ayrıca uygulama içinde de bildiririz.</p>
